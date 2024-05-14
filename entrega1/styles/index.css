@@ -1,1 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #E1F4F3;
+    width: 100%;
+    height: auto;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+header {
+    background-color: #333333;
+    width: 100%;
+    height: auto;
+    
+    
+  
+}
+.logoEncabezado{
+    display: flex;
+    justify-content: left;
+    
+
+}
+.menuEncabezado{
+    
+    display: flex;
+    
+    justify-content: right;
+    color: #E1F4F3;
+    
+
+    
+
+}
+
+.tituloEncabezado{
+
+    display: flex;
+    justify-content: center;
+    color: #E1F4F3;
+    font-size: large;
+}
+main{
+
+    font-size: medium;
+
+
+ }
+
+ .tituloCuerpo{
+
+    display: flex;
+    justify-content: center;
+    color: #333333;
+ }
+
+
+
+ .seccionUno{
+
+    display: flex;
+    justify-content: center;
+    color: #333333;
+
+ }
+
+ #textoPerfil{
+
+    display: flex;
+    justify-content: right;
+ }
+
+ .mediaPagina{
+
+    background-color: #333333;
+    color: #E1F4F3;
+ }
+ #tituloMedio{
+
+    justify-content: center;
+
+ }
+
+ .ultimaSeccion{
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+ }
+
+ footer{background-color: #706C61;}
+
+
+
+
+
+
+
+
+
 

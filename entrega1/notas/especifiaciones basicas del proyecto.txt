@@ -1,0 +1,8 @@
+entrega 1
+colores bases
+azul: 333333
+blanco:ffffff
+azul claro : e1f4f3
+cafesito:706c61
+
+Fuente: garamond

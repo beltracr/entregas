@@ -145,6 +145,8 @@ main{
     align-items: center;
     padding-left: 25px;
     padding-right: 25px;
+    padding-top: 25px;
+
 
     
  }
@@ -165,6 +167,8 @@ main{
    display: grid;
    grid-template-rows: (2,1fr);
    grid-template-columns:repeat(3, 1fr);
+   padding-bottom: 100px;
+
    
    
    
@@ -212,6 +216,36 @@ main{
 
    opacity: 0.9;
    cursor: pointer;
+ }
+
+ .habilidades{
+
+   display: flex;
+   
+    justify-content: space-around;
+    color: var(--colornegro);
+    padding-top: 100px;
+    gap: 10px;
+    align-items: right ;
+    text-align: left;
+    padding-bottom: 100px;
+
+ }
+.textoHabilidades{
+   width: 600px;
+
+}
+
+ .imagenesHabilidades{
+
+   border: solid var(--colornegro);
+   overflow: hidden;
+   display: grid;
+   grid-template-rows: (2,1fr);
+   grid-template-columns:repeat(2, 1fr);
+   
+
+
  }
 
  

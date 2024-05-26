@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--en esta parte enlace mi proyecto con la ventana css, la pagina bootstrap para mis logos de facebook instagram y whatsapp, y adicionalmente inclui mi propio icono hecho en paint-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Cristian Beltran">
@@ -9,7 +10,6 @@
     <link rel="stylesheet" href="./entrega1/styles/index.css">
     <link rel="shortcut icon" href="./entrega1/assets/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Icono creado con el logo ya diseñado previamente en paint 3d, el icono se genero en la pagina https://realfavicongenerator.net/-->
     <title>Portafolio CBG</title>
 </head>
 <body>
@@ -17,18 +17,22 @@
 
         <nav class="menuNavegacion">
 
+            <!--en la parte de header cree un menu que consta de dos partes, la primera es el logo y el titulo que estan enlazado a la pagina principal de mi portafolio
+            la segunda un menu que esta redirigido a diferentes partes dependiendo el botom-->
+
             <div class="logoEncabezado">
                 <a href="./index.html">
-                    <img src="./entrega1/assets/prelogo2.png" alt="logo sitio web" width="75px" height="75px">
+                    <img class="logoIcon1" src="./entrega1/assets/prelogo2.png" alt="logo sitio web" width="75px" height="75px">
                     <p class="titulo1">Portafolio 2024</p>
                 </a>              
         
-            </div>               
+            </div> 
+            <!--aqui se evidencia cada opcion del menu con su redireccionamiento-->              
             <ul class="listaMenu">
-                <li><a  href="#tituloCuerpo">Perfil</a></li>
-                <li><a  href="#tituloMedio">Experiencia</a></li>
-                <li><a  href="">Hoja de vida</a></li>
-                <li><a  href="https://github.com/beltracr">Github</a></li>                    
+                <li class="perfilBottom"><a  href="#tituloCuerpo">Perfil</a></li>
+                <li class="experienciaBottom"><a  href="#tituloMedio">Experiencia</a></li>
+                <li class="vidaBottom"><a  href="./entrega1/assets/Hoja de vida Cristian.pdf">Hoja de vida</a></li>
+                <li class="githubBottom"><a  href="https://github.com/beltracr">Github</a></li>                    
             </ul> 
             
             
@@ -39,7 +43,7 @@
 
     </header>
     <main>
-        
+        <!--el la primera seccion de mi proyecto se muestra mi perfil profesional y tambien lo acompaño con una foto editada en photoshop-->
         
         <h1 class="tituloCuerpo">Cristian David Beltran</h1>
         
@@ -47,14 +51,7 @@
             
             <div><img class="foto" src="./entrega1/assets/FOTOphs.png" alt="fotografia" width="300px" height="300px"></div>
             <div id="textoPerfil"> <p>
-                Me caracterizo por ser una persona responsable y disciplinada, dispuesto a asumir tareas y
-cumplirlas con eficiencia y eficacia. Cuento con experiencia en la atención, ejecución, solución y
-respuesta de solicitudes o PQR por parte de consumidores financieros de forma escrita. Muy
-buen manejo de herramientas ofimáticas incluyendo programas documentales, contables y
-operacionales. Excelente capacidad analítica enfocada en gestión documental y financiera.
-Dominio de bases de datos, para generación de diferentes informes; cuento con un nivel de
-Excel avanzado. He realizado capacitación y preparación de personal nuevo para la integración
-del mismo en el área.
+                Soy un apasionado desarrollador web con habilidades excepcionales en HTML, CSS y JavaScript. Mi enfoque no se limita solo al código; mi creatividad y resiliencia me permiten encontrar soluciones innovadoras para desafíos complejos. Destaco en entornos colaborativos, donde mi capacidad para trabajar en equipo se combina con mi compromiso y ética laboral. Me enorgullece mi capacidad para enfrentar adversidades con determinación y mantener altos estándares de calidad en cada proyecto. Mis valores de integridad, empatía y perseverancia informan cada aspecto de mi trabajo, convirtiéndome en un activo invaluable para cualquier equipo y empresa.
             </p></div>
         </section>
         <section class="mediaPagina">
@@ -63,31 +60,33 @@ del mismo en el área.
                 <h3>Experiencia</h3>
             </div> 
             
-            <div>
-                <a href="./index.html"> <img src="./entrega1/assets/prelogo2.png" alt="logo sitio web" width="75px" height="75px"></a>
+            <div class="iconMedio">
+                <a href="./index.html"> <img class="imgIconMedio" src="./entrega1/assets/prelogo2.png" alt="logo sitio web" width="75px" height="75px"></a>
             </div>  
                      
 
         </section>
+
+        <!--este es una caudrilla donde relaciono cada parrafo de mi experiencia con la imagen del logo de la compañia correspondiente-->
         <section class="experienciaLogos">
             
-            <div class="imagenes img1"><img src="./entrega1/assets/rentokil-initial-logo.png" alt="logo rentokil-initial" width="350px" height="200px"><div class="parrafoImagenes"><p>Contabilizacion y realizacion de tareas contables, aplicacion de pago y conciliacion de cuentas bancarias
+            <div class="imagenes img1"><img src="./entrega1/assets/rentokil-initial-logo.png" alt="logo rentokil-initial" width="350px" height="200px"><div class="parrafoImagenes"><p>Realice gestión contable y de cartera, asegurando precisión y eficiencia en las operaciones financieras.
              </p></div></div>
-            <div class="imagenes img2"><img src="./entrega1/assets/asurion-seeklogo.png" alt="logo asurion-seeklogo" width="550px" height="200px"><div class="parrafoImagenes"><p>
-                He realizado atencion de servicio al cliente y servicio tecnico en idioma ingles.
+            <div class="imagenes img2"><img class="img2.2" src="./entrega1/assets/asurion-seeklogo.png" alt="logo asurion-seeklogo" width="100%" height="100%"><div class="parrafoImagenes"><p>
+                En mi rol, proporcioné servicio técnico en inglés por teléfono a clientes estadounidenses, ofreciendo soluciones efectivas y manteniendo una comunicación clara y cordial en todo momento.
             </p></div></div>
             <div class="imagenes img3"><img src="./entrega1/assets/fondo-nacional-del-ahorro-seeklogo.png" alt="fondo-nacional-del-ahorro-seeklogo" width="250px" height="200px"><div class="parrafoImagenes"><p>
-                Analisis y presentacion de datos de consumidores financieros
+                Estuve encargado del análisis de datos y la elaboración de informes sobre la gestión de cesantías a nivel empresarial.
                 </p></div></div>
             
-            <div class="imagenes img4"><img src="./entrega1/assets/atento.png" alt="fondo-nacional-del-ahorro-seeklogo" width="350px" height="200px"><div class="parrafoImagenes"><p>
-                    Analisis y presentacion de datos de consumidores financieros
+            <div class="imagenes img4"><img src="./entrega1/assets/atento.png" alt="atento logo" width="350px" height="200px"><div class="parrafoImagenes"><p>
+                    En mi puesto en esta empresa, ofrecí atención al cliente por teléfono para clientes del banco BBVA en Estados Unidos, brindando asistencia en inglés con profesionalismo y empatía.
                 </p></div></div>
-            <div class="imagenes img5"><img src="./entrega1/assets/levelmarkets.png" alt="fondo-nacional-del-ahorro-seeklogo" width="250px" height="200px"><div class="parrafoImagenes"><p>
-                    Analisis y presentacion de datos de consumidores financieros
+            <div class="imagenes img5"><img src="./entrega1/assets/levelmarkets.png" alt="fondo-nacional-del-ahorro-seeklogo" width="100%" height="100%"><div class="parrafoImagenes"><p>
+                    Realizacion de ventas telefonicas de productos de inversiones para latinoamerica 
                 </p></div></div>
-            <div class="imagenes img2"><img src="./entrega1/assets/contact.png" alt="logo asurion-seeklogo" width="550px" height="200px"><div class="parrafoImagenes"><p>
-                    He realizado atencion de servicio al cliente y servicio tecnico en idioma ingles.
+            <div class="imagenes img6"><img src="./entrega1/assets/contact.png" alt="logo asurion-seeklogo" width="100%" height="100%"><div class="parrafoImagenes"><p>
+                Proporcioné servicio al cliente por teléfono para clientes de servicios públicos en Canadá, comunicándome con ellos en inglés para resolver sus consultas y problemas de manera eficiente.
                 </p></div></div>
         </section>
         <section class="mediaPagina">
@@ -97,15 +96,17 @@ del mismo en el área.
             </div> 
             
             <div>
-                <a href="./index.html"> <img src="./entrega1/assets/prelogo2.png" alt="logo sitio web" width="75px" height="75px"></a>
+                <a href="./index.html"> <img class="imgIconMedio" src="./entrega1/assets/prelogo2.png" alt="logo sitio web" width="75px" height="75px"></a>
             </div>  
                      
 
         </section>
 
+        <!--se evidencia un resumen de mis habilidades al lado de una cuadrilla con los logos de dichos programas en los que tengo conocimeinto-->
+
         <section class="habilidades">
             <div class="textoHabilidades">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tempora quae accusamus recusandae modi porro perspiciatis quo blanditiis inventore commodi, repellat fugit tenetur reprehenderit odit a autem ipsum explicabo non.
+                Con una sólida base en Excel a nivel intermedio, así como en HTML, CSS y JavaScript, me siento confiado en mi capacidad para abordar una amplia gama de desafíos en el ámbito tecnológico. Mi experiencia en Excel me ha permitido manejar eficientemente datos complejos y realizar análisis detallados, mientras que mi habilidad en desarrollo web me ha capacitado para crear interfaces interactivas y atractivas. Además, mi avanzado dominio del idioma inglés me proporciona una ventaja adicional, facilitando una comunicación efectiva y fluida en entornos internacionales.
             </div>
             <div class="imagenesHabilidades">
                 <img src="./entrega1/assets/csslogo.png" alt="logo css" width="150px" height="100px">
@@ -117,15 +118,17 @@ del mismo en el área.
         </section>
     </main>
     <footer>
-        <section>
+        <!--la parte final de mi proyecto esta realizada para mostrar tanto el copy right como las diferentes redes sociales que manejo, cabe destacar que las redes
+        sociales o sus iconos tienen un redireccionamiento-->
+        <section class="footerCopy">
             <div>
              <a href="./index.html"> <img src="./entrega1/assets/prelogo.png" alt="logo sitio web" width="50px" height="50px"></a>
             </div>
             <div>
-                <h4>Cristian David Beltran Gomez</h4>         
+                <h4> Cristian David Beltran Gomez &copy; </h4>         
             </div>
         </section>
-        <section>
+        <section class="footerRedes">
             <h4>Redes</h4>
 
             <div> 

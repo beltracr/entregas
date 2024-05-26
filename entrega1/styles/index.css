@@ -1,4 +1,8 @@
+/* Empiezo importando la fuente para mi proyecto*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* estas son todas las variables de colores que utilice en mis estilos*/
 
 :root{
    --colorazul: #E1F4F3;
@@ -13,15 +17,15 @@
    padding: 0;
    box-sizing: border-box;
 }
-
+/* principales caracteristicas de la pagina web*/
 body {
-    background-color: var(--colorazul);
+    background-image:url(./fondoimagenback.png);
     width: 100vw;
     height: auto;
     overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-weight: 200vw;
     font-style: normal;
 
 
@@ -30,16 +34,16 @@ body {
 header {
     background-color: var(--colornegro);
     width: 100%;
-    height: 100px;
+    height: 12vh;
  
     
   
 }
-
+/* parametros del header, intento hacerlo muy parecido a las paginas regulares de internet*/
 .menuNavegacion{
    
    width: 100%;
-   height: 100px;  
+   height: 12vh;  
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -55,7 +59,8 @@ header {
 
 .logoEncabezado{
 
-   height: 100px;
+   height: 25vh;
+   width: 25%;
    
 
 }
@@ -63,6 +68,7 @@ header {
 .logoEncabezado a{
    
    height: 100%;
+   width: 100%;
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -88,6 +94,39 @@ header {
    text-decoration: none;
    color: var(--colorazul);
 }
+/*aqui implemente algunas transformaciones leves para mi menu, es un hover muy minimo pero agradable a la vista*/
+.perfilBottom{
+
+   transition: all 300ms ease-in-out;
+}
+.perfilBottom:hover{
+   transform: scale(1.5);
+}
+
+.experienciaBottom{
+
+   transition: all 300ms ease-in-out;
+}
+.experienciaBottom:hover{
+   transform: scale(1.5);
+}
+.vidaBottom{
+
+   transition: all 300ms ease-in-out;
+}
+.vidaBottom:hover{
+   transform: scale(1.5);
+}
+.githubBottom{
+
+   transition: all 300ms ease-in-out;
+}
+.githubBottom:hover{
+   transform: scale(1.5);
+}
+
+
+
 
    
 
@@ -97,9 +136,9 @@ main{
     font-size: medium;
     width: 100%;
     padding-top: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
 
    
     
@@ -130,6 +169,7 @@ main{
     align-items: center ;
     text-align: right;
     padding-bottom: 100px;
+    font-weight: bold;
 
 
  }
@@ -155,14 +195,13 @@ main{
     justify-content: center;
 
  }
+ /* realice una cuadrilla de 3 * 2 con texto que solo sera visible al deslizar el mouse sobre las imagenes dentro de la cuadrilla (hover)*/
 
  .experienciaLogos{
 
    padding-top: 100px;
-   
-   padding-left: 75px;
-   padding-right: 75px;
-   border-radius: 20px;
+ 
+    
    overflow: hidden;
    display: grid;
    grid-template-rows: (2,1fr);
@@ -179,6 +218,8 @@ main{
    display: grid;
    position: relative;
    background-color: var(--colorblanco);
+   width: 100%;
+
    
 
 }
@@ -232,9 +273,11 @@ main{
 
  }
 .textoHabilidades{
-   width: 600px;
+   width: 60%;
+   font-weight: bold;
 
 }
+/* aqui realice una animacion de escala dondo aumenta y disminuye el tamaño de mi cuadrilla, es realmente muy minima para que nos e vea ostentosa*/
 
  .imagenesHabilidades{
 
@@ -243,18 +286,165 @@ main{
    display: grid;
    grid-template-rows: (2,1fr);
    grid-template-columns:repeat(2, 1fr);
-   
+   animation-name: girar;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   animation-direction: alternate-reverse;
+    }
 
+    @keyframes girar{
+
+      from{
+         transform: scale(0.9);
+      }
+
+      50%{transform: scale(1);}
+
+      to{scale: 1.1;}
+
+
+    }
+
+ 
+
+
+ 
+
+ footer{background-color: var(--colormarron);
+   display: flex;
+   justify-content: space-between;
+
+}
+
+ .footerCopy{
+
+   display: flex;
+   justify-content: first baseline;
+   align-items: center;
+ }
+
+ .footerRedes{
+   padding-right: 50px;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 10px;
+  
 
  }
 
- 
+ /* hice una adaptacion para iphone 12 pro*/
+
+ @media screen and (max-width:490px){
+
+   .menuNavegacion{
+      font-size: 10px;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 5px;
+      padding-right: 5px;
+      
+    
+
+   }
+
+   .titulo1{
+      font-size: 10px;
+      padding-bottom: 20px;
+   }
+
+   .logoIcon1{
+
+      width: 40px;
+      height: 40px;
+   }
+
+   .listaMenu{
+
+      gap: 8px;
+   }
+
+   .tituloCuerpo{
+
+      font-size:16.5px;
+   }
+
+  .seccionUno{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   text-align: justify;
+   font-size: 10px;
+   padding-top: 15px;
+   padding-bottom: 40px;
+  }
+  .mediaPagina{
+   font-size: 10px;
+   padding-left: 5px;
+   padding-right: 5px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 5px;
+   
+
+  }
+  .imgIconMedio{
+
+   width: 40px;
+   height: 40px;
+}
+.experienciaLogos{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+   text-align: justify;
+   font-size: 10px;
+   padding-top: 15px;
+   padding-bottom: 40px;
+   padding-left: 0;
+   padding-right:0;
+
+   
+}
 
 
- 
+.habilidades{
 
- footer{background-color: var(--colormarron);}
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   text-align: justify;
+   font-size: 10px;
+   padding-top: 15px;
+   padding-bottom: 40px;
+   
+}
 
+.textoHabilidades{
+
+   width: 100%;
+}
+
+.footer{
+   font-size: 10px;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 5px;
+      padding-right: 0px;
+}
+
+.footerCopy{
+   font-size: 8px;
+}
+
+}
+
+/*no fue necesario realizar ajustes para la adaptacion para el ipad pro teniendo en cuenta que al momento de hacer la visualizacion se ve bastante agradable y coherente a la vista*/
 
 
 

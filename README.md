@@ -8,7 +8,8 @@
 <p> El proyecto se realizo en el siguiente orden:
     1. Wireframe: Se realizo una idea inicial del proyecto con un plano que especificaba las ideas basicas y principales del proyecto.
     2. Mockup: la realizacion del proyecto ya conteniendo el diseño y una idea totalmente plasmada pero sin ningun tipo de funcionalidad todavia.
-    3. Proyecto terminado (html y css) : la aplicacion de codigos tanto estructuralmente como en diseño y estilos para la terminacion del mismo.</p>
+    3. Proyecto terminado (html y css) : la aplicacion de codigos tanto estructuralmente como en diseño y estilos para la terminacion del mismo.
+    4. Se añaden tranformaciones y animaciones, adicionalmente diferentes ejemplos de posicion de elementos tanto flex como grid</p>
 </div>
 
 <div>
@@ -20,3 +21,4 @@
 <div>
 <p> Autoria Cristian David Beltran Gomez </p>
 </div>
+
